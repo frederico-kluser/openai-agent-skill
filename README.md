@@ -31,7 +31,12 @@ impressa e é sempre redigida nas saídas.
 - **`pesquisas/`** — dossiê de pesquisa profunda que fundamenta a referência
   (estado da API a 2026-11, com fontes).
 
-## Requisitos
+## Instalação
+
+A skill instala-se **globalmente por symlink** (uma fonte em
+`~/Agent-Skills/openai-agent-skill`, links em todos os skill roots: `.agents`,
+`.claude*`, `.jcode`, `.pi`, `.dsh`, `.config/opencode/skill`, `.codex`) —
+comandos em [`SKILL.md`](SKILL.md). Requisitos de runtime:
 
 - Python ≥ 3.10 (CLI e exemplos Python) ou Node ≥ 18 (exemplos Node).
 - Uma API key da OpenAI — <https://platform.openai.com/api-keys>.

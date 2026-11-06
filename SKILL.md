@@ -26,6 +26,20 @@ token que apareça nas saídas.
 **Não usar** para: Azure OpenAI/Bedrock (outros fluxos), ChatGPT consumer,
 ou operações sem rede (sem key no ambiente a skill recusa-se — por desenho).
 
+## Instalação global (symlink)
+
+A skill vive num único diretório-fonte (ex. `~/Agent-Skills/openai-agent-skill`,
+o repositório git) e é ligada por **SYMLINK** a todos os skill roots da máquina
+(`~/.agents/skills`, `~/.claude/skills`, `~/.claude-*/skills`,
+`~/.jcode/skills`, `~/.pi/agent/skills`, `~/.dsh/skills`,
+`~/.config/opencode/skill`, `~/.codex/skills`): uma fonte, N links, e qualquer
+agent code encontra a skill. Para religar (após mover a pasta ou num root novo):
+
+```bash
+SKILL_SRC=/c/Users/<user>/Agent-Skills/openai-agent-skill \
+  bash <opensource-project>/scripts/link-skill-global.sh        # --check valida; --unlink remove
+```
+
 ## A regra que define a skill (key = variável de ambiente)
 
 1. Tudo lê `OPENAI_API_KEY` do ambiente (alternativas: `OPENAI_API_KEY_1..9`;
