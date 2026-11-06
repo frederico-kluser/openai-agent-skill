@@ -1,0 +1,30 @@
+# NUNCA commitar segredos
+.env
+.env.*
+*.key
+keys.json
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Node
+node_modules/
+dist/
+
+# Saídas geradas pelos exemplos/CLI (áudio, imagem, etc.)
+out/
+tmp/
+*.mp3
+*.wav
+*.opus
+*.flac
+*.pcm
+
+# Sistemas
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
