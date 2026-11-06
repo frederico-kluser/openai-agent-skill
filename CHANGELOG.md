@@ -10,6 +10,19 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   at release time (see `cliff.toml` and the release automation in `.github/workflows/`).
 - Compare views: <https://github.com/frederico-kluser/openai-agent-skill/compare/>
 
+## 1.0.0 (2026-11-06)
+
+
+### Features
+
+* acesso total a API OpenAI - CLI, exemplos e referencias ([156ad22](https://github.com/frederico-kluser/openai-agent-skill/commit/156ad22d17556a67e7aa868d09c6d7db3e65770c))
+
+
+### Documentation
+
+* guia dos exemplos prontos em examples/README.md ([#1](https://github.com/frederico-kluser/openai-agent-skill/issues/1)) ([b648fc4](https://github.com/frederico-kluser/openai-agent-skill/commit/b648fc4e53d000694040bcbf23b23589ddd7d75d))
+* instalacao global da skill por symlink ([#2](https://github.com/frederico-kluser/openai-agent-skill/issues/2)) ([6bc238c](https://github.com/frederico-kluser/openai-agent-skill/commit/6bc238c3d4bd4ab99cb6cf2d9f9e4e3e06d82766))
+
 ## [Unreleased]
 
 ### Added
